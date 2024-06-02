@@ -10,7 +10,7 @@ import org.springframework.stereotype.Controller;
  * @Blog : https://blog.naver.com/noglass_gongdae
  * @GitHub :
  */
-@Controller
+
 public class ByeController {
 
 }
