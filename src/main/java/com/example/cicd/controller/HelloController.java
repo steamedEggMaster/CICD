@@ -1,5 +1,6 @@
 package com.example.cicd.controller;
 
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -17,8 +18,8 @@ import org.springframework.web.bind.annotation.RestController;
 public class HelloController {
 
     @GetMapping("/hello")
-    public String hello(){
-        return "안녕하세요";
+    public ResponseEntity<String> hello(){
+        return ResponseEntity.ok("안녕하세요. 반갑습니다.");
     }
 
 }
